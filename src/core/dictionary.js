@@ -61,7 +61,6 @@ export const sad = [
   "Melancol",
   "Menospreci",
   "Necesi",
-  "Neutral",
   "Nostalgi",
   "Pena",
   "Perdi",
