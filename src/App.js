@@ -14,6 +14,8 @@ import {
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
+import Spraycan from "./Spraycan";
+
 const App = () => {
   const [formValue, setFormValue] = useState("");
   // Map with the emotion score. Used by emotionDetector function
@@ -124,7 +126,7 @@ const App = () => {
             <h2>{formValue}</h2>
           </div>
         </animated.div>
-
+        <Spraycan canColor={"red"} handColor={25} />
         <form onSubmit={handleNewMessage}>
           <input
             value={formValue}
