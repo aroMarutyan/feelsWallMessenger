@@ -7,13 +7,23 @@ const Spraycan = ({ canColor, handColor }) => {
     //Need to figure out method to separate hand and can
     // Separate SVG into hand and can, put them in the same div and color them differently using filter.
     // Will need to position them inside the div precisely - transform or flexbox
-    filter:
-      "invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)",
+    // filter:
+    //   "invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%)",
+    height: "100px",
+    width: "100px",
+    backgroundColor: "red",
+    maskSize: "contain",
+    maskPosition: "center",
+    maskRepeat: "no-repeat",
+    maskImage: 'url("img/sprayCanHand.svg")',
+    // backgroundImage: 'url("img/sprayCanHand.svg")',
   });
 
   return (
     <>
-      <img className={canStyle()} src={"./sprayCanHand.svg"} alt="" />
+      <div className={canStyle()}></div>
+
+      {/* <img className={canStyle()} src={"img/sprayCanHand.svg"} alt="" /> */}
     </>
   );
 };
